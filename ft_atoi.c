@@ -52,7 +52,7 @@ int	ft_atoi(const char *nptr)
 		flag = -1;
 		nptr++;
 	}
-	if (*nptr == '+' && *(nptr - 1) != '-')
+	else if (*nptr == '+')
 	{
 		flag = 1;
 		nptr++;

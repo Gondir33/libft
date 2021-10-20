@@ -17,6 +17,7 @@ char	*ft_strrchr(const char *s, int c)
 	int	i;
 
 	i = 0;
+	c = c % 256;
 	while (*s)
 	{
 		s++;
