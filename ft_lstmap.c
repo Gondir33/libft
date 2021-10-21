@@ -23,7 +23,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		swaplst = ft_lstnew(f(lst->content));
 		if (!swaplst)
 			break ;
-		ft_lstadd_front(&newlst, swaplst);
+		ft_lstadd_back(&newlst, swaplst);
 		lst = lst->next;
 	}
 	if (!swaplst)
