@@ -104,9 +104,6 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	tab = tabmalloc(s, c);
 	if (!tab)
-	{
-		free(tab);
 		return (NULL);
-	}
 	return (tabfill(s, c, tab));
 }

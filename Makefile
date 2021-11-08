@@ -65,7 +65,7 @@ $(NAME):	$(OBJ)
 	ar rc $(NAME) $(OBJ)
 	ranlib $(NAME)
 
-%.o: %.c libft.h
+%.o: %.c libft.h $(SRC)
 	$(CC) $(CFLAGS) -I $(INCLD) -c $< -o $(<:.c=.o)
 
 clean:
